@@ -20,4 +20,9 @@ class Product extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+    public function product_asset()
+    {
+        return $this->hasMany(Product_asset::class);
+    }
 }
