@@ -18,7 +18,7 @@ class CategorySeeder extends Seeder
 
         for ($i=0; $i < 5; $i++) { 
             DB::table('categories')->insert([
-                'nama' => $nama[$i],
+                'name' => $nama[$i],
             ]);
         }
     }
