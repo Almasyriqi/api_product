@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\API\CategoryController;
+use App\Http\Controllers\API\ProductAssetController;
 use App\Http\Controllers\API\ProductController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -27,3 +28,6 @@ Route::get('categories/order', [CategoryController::class, 'orderByAmountProduct
 // Endpoint Products
 Route::get('product/order', [ProductController::class, 'orderByPrice']);
 Route::apiResource('product', ProductController::class);
+
+// Endpoint Product Asset
+Route::apiResource('productAsset', ProductAssetController::class);
